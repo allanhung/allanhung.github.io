@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://allanhung.github.io/categories/</loc>
+    <lastmod>2019-11-15T14:24:54+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://allanhung.github.io/tags/git/</loc>
     <lastmod>2019-11-15T14:24:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -38,14 +45,15 @@
   </url>
   
   <url>
-    <loc>https://allanhung.github.io/tags/</loc>
+    <loc>https://allanhung.github.io/categories/readme/</loc>
     <lastmod>2019-11-15T14:24:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://allanhung.github.io/categories/</loc>
+    <loc>https://allanhung.github.io/tags/</loc>
+    <lastmod>2019-11-15T14:24:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

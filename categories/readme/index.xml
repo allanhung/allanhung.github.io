@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readme on Blog On Github</title>
+    <link>https://allanhung.github.io/categories/readme/</link>
+    <description>Recent content in Readme on Blog On Github</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Nov 2019 14:24:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://allanhung.github.io/categories/readme/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://allanhung.github.io/posts/hugo/</link>
+      <pubDate>Fri, 15 Nov 2019 14:24:54 +0800</pubDate>
+      
+      <guid>https://allanhung.github.io/posts/hugo/</guid>
+      <description>&lt;h1 id=&#34;create-and-deploy-your-hugo-site-on-github&#34;&gt;Create and deploy your Hugo site on Github&lt;/h1&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
