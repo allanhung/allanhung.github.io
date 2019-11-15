@@ -3,17 +3,17 @@
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <meta property="og:title" content=" Tags &middot;  Test Site" />
+  <meta property="og:title" content=" Posts &middot;  Test Site" />
   
   <meta property="og:site_name" content="Test Site" />
-  <meta property="og:url" content="https://allanhung.github.io/tags/" />
+  <meta property="og:url" content="https://allanhung.github.io/posts/" />
   
   
     <meta property="og:type" content="website" />
   
 
   <title>
-     Tags &middot;  Test Site
+     Posts &middot;  Test Site
   </title>
 
   <link rel="alternative stylesheet" href="https://allanhung.github.io/css/bootstrap.min.css" />
@@ -61,12 +61,40 @@
   </header>
   <main class="container">
 
-<section class="taxonomy-terms">
-  <h1>Tags</h1>
+<section class="article-list">
+  <h1>Posts</h1>
   
-  <div class="list-group">
-	
+    <div class="delimiter"></div>
+    <article>
+  <header>
+    <h1 class="li-h1"><a href="https://allanhung.github.io/posts/hugo/">Hugo</a></h1>
+    <div class="clearfix">
+      <div class="post-date pull-left">
+        <span class="li-small">
+          Posted on
+          Nov 15, 2019 at 14:24
+        </span>
+      </div>
+    </div>
+  </header>
+  <div>
+    
+      Create and deploy your Hugo site on Github create repo  hugo_blog .github.io
+hugo new site hugo_blog cd hugo_blog &amp;&amp; git init &amp;&amp; git remote add origin https://github.com/&lt;user_name&gt;/hugo_blog # add theme git submodule add https://github.com/calintat/minimal.git themes/minimal git submodule add -f https://github.com/&lt;user_name&gt;/&lt;user_name&gt;.github.io.git cat &gt; config.toml &lt;&lt; EOF baseURL = &quot;https://&lt;user_name&gt;.github.io/&quot; languageCode = &quot;en-us&quot; title = &quot;Test Site&quot; theme = &quot;minimal&quot; googleAnalytics = &quot;&quot; publishDir = &quot;&lt;user_name&gt;.github.io&quot; EOF hugo cd &lt;user_name&gt;.github.io.git &amp;&amp; git add .
+    
   </div>
+  <footer>
+    <div class="read-more-container">
+      <a class="btn btn-primary" href="https://allanhung.github.io/posts/hugo/">
+        <div>
+          Read more <span aria-hidden="true">&rarr;</span>
+        </div>
+      </a>
+    </div>
+  </footer>
+</article>
+
+  
 </section>
   </main>
   <footer class="container global-footer">

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Hugo &middot;  Test Site" />
+  
+  <meta property="og:site_name" content="Test Site" />
+  <meta property="og:url" content="https://allanhung.github.io/posts/hugo/" />
+  
+  
+    <meta property="og:type" content="article" />
+    
+    <meta property="og:article:published_time" content="2019-11-15T14:24:54&#43;08:00" />
+    
+  
+
+  <title>
+     Hugo &middot;  Test Site
+  </title>
+
+  <link rel="alternative stylesheet" href="https://allanhung.github.io/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://allanhung.github.io/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://allanhung.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://allanhung.github.io/css/github.css" />
+  <link rel="stylesheet" href="https://allanhung.github.io/css/color-theme.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  <link rel="shortcut icon" href="https://allanhung.github.io/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://allanhung.github.io/images/apple-touch-icon.png" />
+
+  
+
+  
+</head>
+<body>
+  
+  <header class="global-header"  style="background-image:url(https://allanhung.github.io/images/bg.jpg)">
+  
+    <section class="header-text">
+      <h1><a href="https://allanhung.github.io/">Test Site</a></h1>
+      
+      
+        <a class="btn btn-default btn-home" href="https://allanhung.github.io/">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          &nbsp;Home
+        </a>
+      
+      
+      <div class="navbar-container">
+        
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">Hugo</h1>
+  </header>
+  <div class="delimiter"></div>
+  <section>
+    
+
+<h2 id="create-and-deploy-your-hugo-site-on-github">Create and deploy your Hugo site on Github</h2>
+
+<h3 id="create-repo">create repo</h3>
+
+<ul>
+<li>hugo_blog</li>
+
+<li><p><user_name>.github.io</p>
+
+<pre><code class="language-bash">hugo new site hugo_blog
+cd hugo_blog &amp;&amp; git init &amp;&amp; git remote add origin https://github.com/&lt;user_name&gt;/hugo_blog
+# add theme
+git submodule add https://github.com/calintat/minimal.git themes/minimal
+git submodule add -f https://github.com/&lt;user_name&gt;/&lt;user_name&gt;.github.io.git
+cat &gt; config.toml &lt;&lt; EOF
+baseURL = &quot;https://&lt;user_name&gt;.github.io/&quot; 
+languageCode = &quot;en-us&quot;  
+title = &quot;Test Site&quot;  
+theme = &quot;minimal&quot;  
+googleAnalytics = &quot;&quot;  
+publishDir = &quot;&lt;user_name&gt;.github.io&quot;
+EOF
+hugo
+cd &lt;user_name&gt;.github.io.git &amp;&amp; git add . --all &amp;&amp; git commit -m &quot;hugo static&quot; &amp;&amp; git push
+git add . --all &amp;&amp; git commit -m &quot;first hugo site&quot; &amp;&amp; git push -u origin master
+</code></pre></li>
+</ul>
+
+<p>Browser <a href="https://&lt;user_name&gt;.github.io">https://<user_name>.github.io</a></p>
+
+  </section>
+  <div class="clearfix">
+    
+      <div class="post-date pull-left">
+        <span class="small">
+          Posted on
+          Nov 15, 2019 at 14:24
+        </span>
+      </div>
+    
+    <div class="pull-right">
+      
+    </div>
+  </div>
+  <footer>
+    
+	
+    <div class="delimiter"></div>
+    <div class="pager-container">
+      
+        <a class="btn btn-primary btn-older-posts disabled" href="#">
+          <div>
+            <span aria-hidden="true">&larr;</span> Older Posts
+          </div>
+        </a>
+      
+      
+        <a class="btn btn-primary btn-newer-posts disabled" href="#">
+          <div>
+            Newer Posts <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      
+    </div>
+  </footer>
+</article>
+<div class="delimiter"></div>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  
+  
+  
+
+  
+  
+
+  
+</body>
+</html>
+
