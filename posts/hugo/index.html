@@ -92,14 +92,17 @@
 
 <h3 id="install-hugo">install hugo</h3>
 
-<p>brew install hugo</p>
+<pre><code class="language-bash">brew install hugo
+</code></pre>
 
 <h3 id="create-repo-in-github">create repo in github</h3>
 
 <ul>
 <li>hugo_blog</li>
+<li><user_name>.github.io</li>
+</ul>
 
-<li><p><user_name>.github.io</p>
+<h3 id="create-site-by-hugo-and-deply-to-github">create site by hugo and deply to github</h3>
 
 <pre><code class="language-bash">hugo new site hugo_blog
 cd hugo_blog &amp;&amp; git init &amp;&amp; git remote add origin https://github.com/&lt;user_name&gt;/hugo_blog
@@ -110,17 +113,54 @@ cat &gt; config.toml &lt;&lt; EOF
 baseURL = &quot;https://&lt;user_name&gt;.github.io/&quot; 
 languageCode = &quot;en-us&quot;  
 title = &quot;Test Site&quot;  
-theme = &quot;minimal&quot;  
-googleAnalytics = &quot;&quot;  
+theme = &quot;hamburg&quot;
+googleAnalytics = &quot;&quot;
 publishDir = &quot;&lt;user_name&gt;.github.io&quot;
+
+[menu]
+  [[menu.main]]
+    name = &quot;Home&quot;
+    identifier = &quot;home&quot;
+    url = &quot;/&quot;
+
+  [[menu.main]]
+    name = &quot;Tags&quot;
+    identifier = &quot;tags&quot;
+    url = &quot;tags/&quot;
+
+  [[menu.main]]
+    name = &quot;Categories&quot;
+    identifier = &quot;categories&quot;
+    url = &quot;categories/&quot;
+
+[sitemap]
+  changefreq = &quot;monthly&quot;
+  priority = 0.5
+  filename = &quot;sitemap.xml&quot;
 EOF
 hugo
 cd &lt;user_name&gt;.github.io.git &amp;&amp; git add . --all &amp;&amp; git commit -m &quot;hugo static&quot; &amp;&amp; git push
 git add . --all &amp;&amp; git commit -m &quot;first hugo site&quot; &amp;&amp; git push -u origin master
-</code></pre></li>
-</ul>
+</code></pre>
 
-<p>Browser <a href="https://&lt;user_name&gt;.github.io">https://<user_name>.github.io</a></p>
+<h3 id="new-post">new post</h3>
+
+<pre><code class="language-bash">hugo new posts/my-first-file.md
+</code></pre>
+
+<h3 id="example-content">example content</h3>
+
+<pre><code>---
+title: &quot;Hugo&quot;
+date: 2019-11-15T14:24:54+08:00
+summary: &quot;How to create blog with Hugo and deploy to Github&quot;
+tags: [&quot;Hugo&quot;,&quot;Git&quot;]
+categories: [&quot;Readme&quot;]
+---
+your markdown context
+</code></pre>
+
+<p>Browser Blog URL: <a href="https://&lt;user_name&gt;.github.io">https://<user_name>.github.io</a></p>
   </section>
   <div class="clearfix">
     
