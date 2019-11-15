@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Test Site</title>
+    <title>Blog On Github</title>
     <link>https://allanhung.github.io/</link>
-    <description>Recent content on Test Site</description>
+    <description>Recent content on Blog On Github</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Nov 2019 14:24:54 +0800</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Fri, 15 Nov 2019 14:24:54 +0800</pubDate>
       
       <guid>https://allanhung.github.io/posts/hugo/</guid>
-      <description>Create and deploy your Hugo site on Github create repo  hugo_blog .github.io
-hugo new site hugo_blog cd hugo_blog &amp;amp;&amp;amp; git init &amp;amp;&amp;amp; git remote add origin https://github.com/&amp;lt;user_name&amp;gt;/hugo_blog # add theme git submodule add https://github.com/calintat/minimal.git themes/minimal git submodule add -f https://github.com/&amp;lt;user_name&amp;gt;/&amp;lt;user_name&amp;gt;.github.io.git cat &amp;gt; config.toml &amp;lt;&amp;lt; EOF baseURL = &amp;quot;https://&amp;lt;user_name&amp;gt;.github.io/&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;Test Site&amp;quot; theme = &amp;quot;minimal&amp;quot; googleAnalytics = &amp;quot;&amp;quot; publishDir = &amp;quot;&amp;lt;user_name&amp;gt;.github.io&amp;quot; EOF hugo cd &amp;lt;user_name&amp;gt;.github.io.git &amp;amp;&amp;amp; git add .</description>
+      <description>&lt;h1 id=&#34;create-and-deploy-your-hugo-site-on-github&#34;&gt;Create and deploy your Hugo site on Github&lt;/h1&gt;</description>
     </item>
     
   </channel>
