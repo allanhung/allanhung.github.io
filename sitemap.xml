@@ -3,8 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://allanhung.github.io/about/</loc>
+    <lastmod>2019-11-15T15:46:13+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://allanhung.github.io/</loc>
-    <lastmod>2019-11-15T14:24:54+08:00</lastmod>
+    <lastmod>2019-11-15T15:46:13+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
