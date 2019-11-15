@@ -99,23 +99,23 @@
 
 <ul>
 <li>hugo_blog</li>
-<li><user_name>.github.io</li>
+<li>{user_name}.github.io</li>
 </ul>
 
 <h3 id="create-site-by-hugo-and-deply-to-github">create site by hugo and deply to github</h3>
 
 <pre><code class="language-bash">hugo new site hugo_blog
-cd hugo_blog &amp;&amp; git init &amp;&amp; git remote add origin https://github.com/&lt;user_name&gt;/hugo_blog
+cd hugo_blog &amp;&amp; git init &amp;&amp; git remote add origin https://github.com/{user_name}/hugo_blog
 # add theme
 git submodule add https://github.com/calintat/minimal.git themes/minimal
-git submodule add -f https://github.com/&lt;user_name&gt;/&lt;user_name&gt;.github.io.git
+git submodule add -f https://github.com/{user_name}/{user_name}.github.io.git
 cat &gt; config.toml &lt;&lt; EOF
-baseURL = &quot;https://&lt;user_name&gt;.github.io/&quot; 
+baseURL = &quot;https://{user_name}.github.io/&quot; 
 languageCode = &quot;en-us&quot;  
 title = &quot;Test Site&quot;  
 theme = &quot;hamburg&quot;
 googleAnalytics = &quot;&quot;
-publishDir = &quot;&lt;user_name&gt;.github.io&quot;
+publishDir = &quot;{user_name}.github.io&quot;
 
 [menu]
   [[menu.main]]
@@ -139,7 +139,7 @@ publishDir = &quot;&lt;user_name&gt;.github.io&quot;
   filename = &quot;sitemap.xml&quot;
 EOF
 hugo
-cd &lt;user_name&gt;.github.io &amp;&amp; git add . --all &amp;&amp; git commit -m &quot;hugo static&quot; &amp;&amp; git push
+cd {user_name}.github.io &amp;&amp; git add . --all &amp;&amp; git commit -m &quot;hugo static&quot; &amp;&amp; git push
 git add . --all &amp;&amp; git commit -m &quot;first hugo site&quot; &amp;&amp; git push -u origin master
 </code></pre>
 
@@ -157,16 +157,16 @@ summary: &quot;How to create blog with Hugo and deploy to Github&quot;
 tags: [&quot;Hugo&quot;,&quot;Git&quot;]
 categories: [&quot;Readme&quot;]
 ---
-your markdown context
+{your markdown context}
 </code></pre>
 
 <h3 id="push-to-github">push to github</h3>
 
 <pre><code>hugo
-cd &lt;user_name&gt;.github.io &amp;&amp; git add . --all &amp;&amp; git commit -m &quot;hugo static&quot; &amp;&amp; git push
+cd {user_name}.github.io &amp;&amp; git add . --all &amp;&amp; git commit -m &quot;hugo static&quot; &amp;&amp; git push
 </code></pre>
 
-<p>Browser Blog URL: <a href="https://&lt;user_name&gt;.github.io">https://<user_name>.github.io</a></p>
+<p>Browser Blog URL: <a href="https://{user_name}.github.io">https://{user_name}.github.io</a></p>
   </section>
   <div class="clearfix">
     
